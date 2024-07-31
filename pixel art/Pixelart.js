@@ -12,7 +12,7 @@ gridWidth.value=0;
 gridHeight.value=0;
 let draw;
 let clicked;
-let moving;
+
 // console.log(drawColor.value);
 
 
