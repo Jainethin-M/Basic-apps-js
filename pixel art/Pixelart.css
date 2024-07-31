@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+:root{
+    --paint: red;
+
+}
+body{
+    background-color: aquamarine;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    position: relative;
+    background: linear-gradient(135deg,purple,whitesmoke);
+    text-align: center;
+    margin: 0 20%;
+    border-radius: 20px;
+    padding : 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+.size-setter{
+    /* background-color:; */
+    color: white;
+    text-shadow: black 2px 2px;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: left; */
+}
+.size-setter .slider{
+    /* background-color: red;; */
+    
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    /* align-items: space-evenly; */
+    margin: 10px;
+    /* padding: 5px; */
+    gap: 15px;
+    border: 2px dashed white;
+    padding: 20px;
+
+}
+.range{
+    display: flex;
+    /* justify-content: left; */
+}
+button{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: gold;
+    font-size: 14px;
+}
+.option-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.option-buttons input[type="color"] {
+    background-color: gold;
+    height: inherit;
+    /* width:  */
+    
+}
+.container{
+    /* display: none; */
+    /* background-color: red; */
+    display: grid;
+    /* grid-template-columns: 2; */
+    cursor: url("D:\programming\web\IMAGE\gvk wall.jpg");
+}
+input[type="range"]{
+    /* display: none; */
+    height: 20px;
+    background: linear-gradient(blue,red);
+    cursor: pointer;
+}
+
+.boxcol {
+    border: 1px solid black;
+    /* padding: 2px; */
+    margin : 0.5px;
+    background: transparent;
+    width: 15px;
+    height: 15px;
+
+}
+.boxcol:hover ,.boxcol:visited{
+    background-color: var(--paint);
+}

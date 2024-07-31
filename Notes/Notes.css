@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, violet,red);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.create-note{
+    background-color: beige;
+    width: 100px;
+    height: 30px;
+    font-weight:bolder;
+
+}
+.note-container{
+    /* display: none; */
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 20%;
+    min-height: 100px;
+    max-height: auto;
+    margin: 20px 0px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border: 3px solid black;
+    padding: 20px;
+
+}
+.note-container 
+.delete-icon{
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+    cursor: pointer;
+}
+.delete-icon:hover{
+    text-shadow: red 0px 0px 2px;
+}

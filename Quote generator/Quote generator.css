@@ -1,0 +1,75 @@
+/* @import url("link"); */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body{
+    background-color: bisque;
+}
+.wrapper{
+    height: 40vh;
+    width: 60vw;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px 10px ;
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    text-align: center;
+}
+.wrapper h2{
+    font-size: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.wrapper h2::after{
+    content: '';
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgb(31, 69, 194);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.wrapper blockquote{
+    color: indigo;
+    font-size: 15px;
+}
+.wrapper blockquote::after , .wrapper blockquote::before{
+    content : '"';
+}
+.wrapper span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    margin-right: 20px;
+    position: relative;
+}
+span::before{
+    content: '-';
+    width: 20px;
+    height: 2px;
+  
+}
+
+.wrapper div{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+button{
+    background-color: indigo;
+    color: white;
+    height: 30px;
+    min-width: 100px;
+    border-radius: 10px;
+
+}
+button:nth-child(2){
+    color: yellow;
+}

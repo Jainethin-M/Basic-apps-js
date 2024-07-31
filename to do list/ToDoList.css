@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    color: whitesmoke;
+}
+body{
+    background-color: blueviolet;
+}
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todoapp{
+    /* min-height: 40vh; */
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+}
+.task-adder{
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 50px; */
+}
+.add-task{
+    background-color: orange;
+    border: none;
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 0px 15px 15px 0px;
+    border-left: 1px dashed black;
+}
+.get-task{
+    height: 30px;
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.87);
+    border: none;
+    border-radius: 15px 0px 0px 15px ;
+    padding: 0px 20px;
+    color: black;
+}
+.tasks{
+    display: block;
+    list-style-type: none;
+    position: relative;
+    /* margin-bottom: px; */
+}
+.tasks li{
+    cursor: pointer;
+    width: 200px;
+    display: block;
+    margin: 5px;
+}
+.tasks li::before{
+    content: '';
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    left: -15px;
+    background-color: red;
+
+
+}
+.checked{
+    color: black;
+    text-decoration: line-through;
+}
+.tasks .checked::before{
+    background-color: green;
+}
+.tasks li span{
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    width: 15px;
+    height: 15px;
+    text-align: center;    
+}
+.tasks li span:hover{
+    background-color: rgba(240, 248, 255, 0.3);
+    border-radius: 50%;
+}
